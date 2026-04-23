@@ -1,0 +1,426 @@
+OJT E-PORTFOLIO — FINAL CONTENT DRAFT
+Maria Consuelo Abalos Jr | BS Computer Science | Stratpoint Technologies, Inc.
+================================================================================
+
+
+NAVIGATION BAR
+About · Stratpoint · The Work · Deliverables · Growth · Tech Stack · CS in Practice · Reflection
+
+
+================================================================================
+SECTION 1 — STUDENT PROFILE
+Nav label: About
+[PICTURE: Professional headshot or OJT photo of yourself. Alternatively, a photo
+from the OJT (at your workstation or during your capstone presentation).]
+================================================================================
+
+Name: Maria Consuelo Abalos Jr
+Course & Year: Bachelor of Science in Computer Science
+Email: [your email here]
+
+I am Maria Consuelo Abalos Jr, a BS Computer Science student with a deep interest
+in data engineering and analytics. My academic journey has given me a strong
+foundation in programming, database systems, algorithms, and software development,
+which are competencies I carried into and actively expanded during my on-the-job
+training at Stratpoint Technologies, Inc.
+
+My coursework in database management, data structures, systems analysis, and
+object-oriented programming shaped the way I think about problems: analytically,
+systematically, and with a focus on building things that actually work under real
+conditions. These skills became the backbone of everything I built during my OJT.
+
+Looking forward, I aspire to build a career in data engineering, with a focus on
+designing scalable data infrastructure that helps organizations make smarter and
+more reliable decisions. My OJT experience confirmed this direction and gave me my
+first real taste of what it means to work as a data professional in a production
+environment.
+
+
+================================================================================
+SECTION 2 — COMPANY PROFILE
+Nav label: Stratpoint
+[PICTURE: Stratpoint Technologies official logo (from stratpoint.com). A photo of
+the Mandaluyong office or workspace if available. A group photo of the intern cohort.]
+================================================================================
+
+Company: Stratpoint Technologies, Inc.
+Industry: Information Technology — Software Development, Cloud, Data & AI
+Founded: 2005
+Location: Mandaluyong, Philippines (with global clients)
+My Role: Data Intern (Data Engineering & Analytics)
+
+Stratpoint Technologies was founded in 2005 as a venue to showcase Filipino
+engineering talent on the world stage, originally built from an acquired software
+house called Sequel Solutions. Over the past two decades, it has grown into one of
+the Philippines' most recognized technology companies, delivering enterprise-grade
+solutions globally for more than 25 years and specializing in agile software
+development, cloud, data, and AI.
+
+Stratpoint positions itself as a digital acceleration partner, helping businesses
+speed up their transformation journeys through capabilities spanning software
+development, quality assurance, cloud, data, and artificial intelligence. A
+milestone early in its history was becoming the first homegrown AWS services
+provider in the Philippines in 2010, a distinction that reflects the company's
+culture of being early movers in emerging technology. Today, Stratpoint is trusted
+by brands including Globe, SM, Robinsons, UnionBank, Singlife, and Cebu Pacific,
+among others.
+
+The company is guided by its C.A.R.E. values: Creativity, Agility, Reliability,
+and Evolution, which shape how its teams approach project delivery, client
+relationships, and continuous learning.
+
+I was assigned to the Data Engineering and Analytics department, where I was part
+of a cohort of eight interns. Our group worked under the guidance of Stratpoint's
+data team, each of us taking on projects that covered the full data lifecycle, from
+raw ingestion and pipeline engineering to transformation, modeling, and business
+intelligence. Being part of a group of interns made the experience genuinely
+collaborative: we shared blockers, compared approaches, and learned from each
+other's progress alongside the technical mentorship we received from the team. My
+specific focus spanned both data engineering and data analytics, giving me
+end-to-end exposure to how raw data is ingested, cleaned, structured, and
+ultimately turned into insights a decision-maker can act on.
+
+
+================================================================================
+SECTION 3 — BACKGROUND OF THE TRAINING & PROJECT INVOLVEMENT
+Nav label: The Work
+[PICTURE: Pipeline architecture diagram showing the Bronze, Silver, and Gold layers
+with tools at each stage — likely available from your presentation slides. A simple
+flow diagram (Ingestion to Transformation to Analytics) also works.]
+================================================================================
+
+My OJT training at Stratpoint was built around two core projects: the Movie
+Analytics Pipeline and the E-Commerce Mini-Pipeline. Both were designed to give me
+practical, end-to-end experience in how professional data teams design and operate
+real pipelines.
+
+The Movie Analytics Pipeline was the primary project, a full-scale capstone that
+required me to ingest raw, messy movie data from multiple sources, clean and
+transform it through a three-layer medallion architecture (Bronze, Silver, and
+Gold), and deliver it as an interactive Power BI dashboard. The central business
+question driving the project was: "How reliable are movie ratings as a basis for
+decision-making, and how can their trustworthiness be improved using engagement and
+variability metrics?" This framing pushed me to think not just as a builder but as
+someone solving a real analytical problem with business implications.
+
+The E-Commerce Mini-Pipeline was a secondary project that reinforced the same
+engineering principles at a smaller scale. It involved building an automated ETL
+pipeline for e-commerce data, with a focus on ingestion design and orchestration
+using Apache Airflow. It was a valuable complement to the main project because it
+required me to apply what I had learned in a new context with a different data
+shape and different business logic.
+
+Both projects aligned directly with Stratpoint's broader mission of building
+reliable, scalable data systems for clients. My responsibilities spanned the full
+lifecycle: designing the architecture, writing ingestion and transformation code,
+setting up orchestration, running automated tests, and documenting everything so
+that the work could be understood, maintained, and extended by others.
+
+
+================================================================================
+SECTION 4 — PROJECT INVOLVEMENT DELIVERABLES
+Nav label: Deliverables
+[PICTURE: Screenshot of the Power BI dashboard. Screenshot of your GitHub
+repository. Screenshot of dbt test results showing 35 passing tests. A photo from
+the capstone presentation day.]
+================================================================================
+
+Over the course of my OJT, I produced five major deliverables:
+
+1. End-to-End Movie Analytics Data Pipeline
+   A fully functional, Dockerized data pipeline built on a medallion architecture.
+   The Bronze layer handled raw data ingestion using Python with pandas for CSV
+   data and PySpark for JSON data. The Silver layer cleaned, typed, deduplicated,
+   and standardized the data using dbt views, including multi-format date parsing,
+   referential integrity checks, and quarantine logic for corrupt rows. The Gold
+   layer produced an analytics-ready star schema with fact tables, dimension tables,
+   and bridge tables for many-to-many relationships. The pipeline was orchestrated
+   end-to-end using Apache Airflow and validated by 35 automated dbt tests, all of
+   which passed. Full source code and documentation are available on my GitHub.
+
+2. Power BI Analytics Dashboard
+   An interactive dashboard built on top of the Gold layer, designed to answer the
+   project's central business question about movie rating reliability. Key features
+   include a dynamic slicer that lets users set a minimum rating threshold to filter
+   out low-engagement scores, and visualizations covering genre performance, rating
+   distributions, engagement trends, and a custom reliability score metric computed
+   from average rating, total ratings, and standard deviation.
+
+3. E-Commerce Mini-Pipeline
+   A secondary ETL pipeline for e-commerce data, covering extraction,
+   transformation, loading, and Airflow orchestration. This project served as a
+   reinforcement exercise and a test of my ability to apply pipeline principles to
+   a new domain independently.
+
+4. Technical Documentation & Learning Reports
+   Throughout the training, I produced written documentation for each tool and
+   component I learned, covering process explanations, architecture decisions, data
+   flow write-ups, and tool-specific learning reports. All documentation lives in
+   my GitHub repositories alongside the code it describes.
+
+5. Capstone Presentation
+   A formal end-of-training presentation delivered to a panel of evaluators and my
+   supervisor. The presentation walked through the pipeline's objectives,
+   architecture, implementation decisions, key challenges, and findings, followed
+   by a live Q&A. This was the most visible professional deliverable of my OJT and
+   the one that tested not just technical knowledge but the ability to communicate
+   it clearly and confidently.
+
+
+================================================================================
+SECTION 5 — PROFESSIONAL LEARNING AND DEVELOPMENT ACHIEVED
+Nav label: Growth
+[PICTURE: A candid photo of you working at your workstation during the OJT. A
+photo with fellow interns or the data team mentor. If no candid shots are
+available, a photo from the intern cohort gathering works well.]
+================================================================================
+
+My OJT at Stratpoint was the most technically demanding and professionally
+formative experience of my time as a student. It pushed me well past the edge of
+what coursework had prepared me for, and that gap turned out to be the most
+valuable part.
+
+On the technical side, I gained hands-on experience with the full data engineering
+lifecycle. I learned what it actually takes to build a pipeline that does not just
+run but is reliable, testable, maintainable, and documented. These are qualities I
+now understand are not optional in professional environments; they are the
+baseline. I developed a much stronger understanding of data quality: how bad data
+enters a system, how it propagates silently if you are not careful, and how to
+design systems that catch and handle it before it causes damage downstream.
+
+Professionally, the OJT taught me how to operate independently in a real
+workplace. I had to manage my own time, set my own pace of learning when picking
+up unfamiliar tools, and know when to push through a problem on my own versus when
+to ask for help. I also learned how to communicate technical work to an audience,
+something that sounds simple but is genuinely difficult when the work involves
+concepts like orchestration DAGs, medallion architecture, and dbt model lineage.
+
+The growth I am most proud of is harder to quantify. Before this OJT, a
+frustrating error message or a failed setup would have derailed my confidence. By
+the end of it, those moments were just part of the process. I had developed a
+rhythm for tackling unfamiliar problems: read the documentation, isolate the
+issue, test a fix, and move forward. That mindset shift, from feeling stopped by
+difficulty to feeling challenged by it, is something I expect to carry through my
+entire career.
+
+
+================================================================================
+SECTION 6 — MODERN TECHNIQUES, SKILLS, AND TOOLS USED/LEARNED
+Nav label: Tech Stack
+[PICTURE: Tool logos in a clean grid — Python, PostgreSQL, dbt, Apache Airflow,
+Docker, PySpark, Power BI, GitHub. All logos are freely available from each tool's
+official website. Keep them uniform in size and evenly spaced.]
+================================================================================
+
+DATA PIPELINE & ORCHESTRATION
+- Apache Airflow
+- Docker
+- WSL2 / Ubuntu
+
+DATA STORAGE & QUERYING
+- PostgreSQL
+- SQL
+
+DATA TRANSFORMATION & MODELING
+- dbt (data build tool)
+
+DATA PROCESSING & PROGRAMMING
+- Python
+- pandas
+- PySpark
+
+ANALYTICS & VISUALIZATION
+- Power BI
+
+VERSION CONTROL & DOCUMENTATION
+- GitHub
+
+---
+
+Complete breakdown of tools by project:
+
+The Movie Analytics Pipeline used Python with pandas for CSV ingestion into the
+Bronze layer, PySpark for JSON-format ratings ingestion, PostgreSQL as the primary
+data warehouse across all three layers, dbt for all Silver and Gold layer
+transformations using views and materialized tables, Apache Airflow for end-to-end
+DAG-based orchestration, Docker for full environment containerization and
+reproducibility, WSL2 and Ubuntu as the development environment, and Power BI for
+the final analytics dashboard. GitHub was used throughout for version control and
+documentation hosting.
+
+The E-Commerce Mini-Pipeline used the same core stack of Python, PostgreSQL,
+Apache Airflow, and Docker, applied to a different data domain. It reinforced
+ingestion and orchestration patterns at a smaller scale with different data shapes
+and business logic.
+
+---
+
+Techniques and methodologies applied:
+
+The Medallion Architecture (Bronze, Silver, and Gold) was the foundational design
+pattern. Bronze served as the raw data landing zone with no transformation applied.
+Silver handled cleaning, typing, deduplication, and quality enforcement using dbt
+views. Gold produced the analytics-ready star schema with fact tables, dimension
+tables, and bridge tables for many-to-many relationships. I practiced ELT
+(Extract, Load, Transform) rather than ETL, loading raw data first and performing
+all transformation inside the warehouse using dbt. Data quality was enforced
+through 35 dbt schema tests covering uniqueness, non-null constraints, referential
+integrity, accepted value ranges, and relationship checks across all 12 models. A
+quarantine system was built into the Python ingestion layer to capture corrupt rows
+without stopping the pipeline. Airflow DAGs handled scheduling and dependency
+management across the full pipeline run. Docker ensured the entire environment was
+containerized and reproducible regardless of host machine configuration.
+
+---
+
+Professional skills developed:
+
+Technical documentation writing became a non-negotiable habit throughout the
+training. Every tool I learned required me to produce a written report documenting
+not just what the tool does but how I used it, the decisions I made, and the
+reasoning behind them. By the time I reached the capstone, I had a full
+documentation trail covering every layer of the pipeline, maintained alongside the
+code in GitHub, written clearly enough that someone unfamiliar with the project
+could follow it.
+
+Independent troubleshooting was something I was forced to develop quickly. Every
+new tool in the stack came with a setup phase that did not go smoothly on the
+first try: Airflow DAG configurations that silently failed, Docker networking
+issues that broke inter-container communication, and PySpark dependencies that
+conflicted with the WSL2 environment. There was no one sitting next to me to fix
+these. I had to read error traces carefully, isolate the variable causing the
+problem, test a fix, and iterate. Over time, that process became faster and more
+structured, and that improvement came entirely from repetition under real pressure.
+
+Structured problem-solving became my default approach to any new roadblock. Rather
+than troubleshooting randomly, I learned to break a problem into its smallest
+testable unit: is the issue in the ingestion script, the Docker network, the dbt
+model, or the Airflow DAG? This was most visible during the pipeline integration
+phase, when multiple components had to talk to each other for the first time and
+the failure point could have been anywhere in the stack.
+
+Time management was tested consistently throughout the training, particularly
+during the phase where I was learning dbt and Airflow simultaneously while keeping
+the ingestion layer stable. I had to make deliberate decisions about what to
+prioritize on a given day and what to defer, something no coursework deadline had
+ever really demanded of me at this level of complexity.
+
+Professional presentation of technical work came to a head at the capstone defense.
+I had built the pipeline, but presenting it to a panel meant translating every
+technical decision into language that was precise without being impenetrable,
+including why ELT over ETL, why genre explosion belongs in Gold and not Silver, and
+what the reliability score formula actually measures. That ability to speak to
+technical work with both depth and clarity is one I will carry directly into every
+client-facing or cross-functional role I take on.
+
+
+================================================================================
+SECTION 7 — DISCIPLINE-RELATED SOLUTIONS INTEGRATED INTO THE COMPANY
+Nav label: CS in Practice
+[PICTURE: A code snippet screenshot from your actual project — the star schema SQL,
+the dataclass ingestion structure, or the dbt window function deduplication logic.
+The dbt model lineage graph if available. A screenshot showing the quarantine logic
+or Silver layer cleaning code.]
+================================================================================
+
+My Computer Science background was not just a credential during this OJT. It was
+something I actively drew on to make better technical decisions throughout the
+project.
+
+The most direct application was in database and schema design. My coursework in
+database management gave me the vocabulary and judgment to design the Gold layer
+as a proper star schema, with a central fact table, surrounding dimension tables,
+and bridge tables to correctly resolve many-to-many relationships between movies,
+genres, and countries. Making the wrong design choice here would have meant
+incorrect joins, inflated row counts, and misleading analytics results downstream.
+Getting it right required understanding relational theory at a level that only
+academic study had prepared me for.
+
+I also applied software engineering principles to the ingestion layer. Rather than
+writing flat procedural scripts, I structured the Python ingestion code using
+dataclasses with built-in validation methods, a pattern drawn from object-oriented
+programming that made the code modular, testable, and easier to extend. This
+approach was applied consistently across both the CSV pipeline using pandas and the
+JSON pipeline using PySpark, two very different ingestion contexts that required
+the same disciplined design thinking.
+
+Finally, my understanding of data integrity and systems reliability, concepts
+covered in database and systems analysis courses, directly informed how I designed
+the pipeline's quality control layer. I built defensive guards against malformed
+data, deduplication logic using SQL window functions, and quarantine mechanisms
+that captured and logged bad rows without stopping the pipeline. These are not
+features a beginner would think to build. They came from understanding why data
+systems fail and designing explicitly to prevent those failure modes.
+
+
+================================================================================
+SECTION 8 — SUMMARY OF OJT REFLECTION
+Nav label: Reflection
+[PICTURE: A photo from the capstone presentation — you presenting to the panel,
+the room setup, or the Q&A moment. A group photo with your supervisor and fellow
+interns after the defense. If no presentation photo is available, a photo of the
+finished Power BI dashboard on screen works as a closing image.]
+================================================================================
+
+Before my OJT, I understood data engineering the way you understand a sport you
+have only ever watched: conceptually, theoretically, and in outline. I knew what a
+data pipeline was. I knew what a data warehouse was. I had written SQL and Python
+and read about ETL patterns. But I had never actually built a system that moved
+real, messy, unreliable data through a series of structured transformations and
+surfaced it as something a decision-maker could act on. That is what this OJT gave
+me, and it changed how I think about the field entirely.
+
+The most technically valuable thing I learned was the difference between writing
+code that works and engineering a pipeline that holds. In class, you write a
+script, it runs, and you are done. In a real data engineering context, that is
+barely the beginning. The pipeline I built had to handle corrupt rows without
+crashing, deduplicate records from inconsistent sources, standardize three
+different date formats coming in from the same dataset, enforce data contracts at
+every layer boundary, and pass 35 automated tests before anything reached the
+analytics layer. Every one of those requirements taught me something that no
+assignment ever had: data engineering is fundamentally about defense. You are not
+just moving data. You are building a system that fails gracefully, catches problems
+early, and gives the people downstream confidence that what they are looking at is
+actually true.
+
+The Medallion Architecture became more than a pattern I followed. It became a way
+of thinking. The discipline of keeping Bronze untouched, Silver focused purely on
+quality with no shape changes and no business logic, and Gold focused purely on
+analytical shape gave me a mental model for organizing data work that I expect to
+carry into every project going forward. Understanding why that separation exists,
+not just that it does, was one of the clearest moments of professional growth I had
+during this training.
+
+On the analytics side, building the Power BI dashboard on top of a Gold layer I
+had designed myself was a completely different experience from building dashboards
+on pre-cleaned data. Because I had made every modeling decision, which fields to
+expose, how to compute the reliability score, and whether to apply the rating
+threshold in the model or push it to a slicer, I understood every number on the
+dashboard and could explain and defend every design choice. That is the kind of
+analytical ownership that only comes from having built the pipeline yourself.
+
+The hardest moments were always the setups: Airflow DAG configuration, Docker
+networking, and PySpark environment issues in WSL2. Each new tool arrived with its
+own failure modes and its own documentation to navigate. But I stopped seeing those
+moments as interruptions to the real work and started seeing them as the real work.
+Debugging a broken environment is a core data engineering skill. By the end of the
+training, I was significantly faster at it than I was at the start, and that speed
+came purely from repetition and building confidence.
+
+The capstone presentation was the moment that tied everything together. Walking a
+panel through the full pipeline, from ingestion design to dbt model lineage to the
+Power BI dashboard, and being able to answer their technical questions with
+specificity and confidence showed me that I had not just used these tools but had
+internalized them. I could talk about why I chose ELT over ETL, why I separated
+genre explosion into the Gold layer instead of Silver, and what the reliability
+score formula was measuring and why. That level of understanding is what I am most
+proud of taking out of this OJT.
+
+Data engineering is the career I want to build. I now have a real project,
+documented, tested, containerized, and presented, to prove that I can do the work.
+That foundation did not come from a classroom. It came from Stratpoint.
+
+
+================================================================================
+END OF CONTENT DRAFT
+================================================================================

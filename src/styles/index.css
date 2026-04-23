@@ -1,0 +1,18 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+[data-scroll-text] [class*="text-white"] {
+  color: var(--page-text-color, white) !important;
+}
+[data-scroll-text] [class*="text-white"],
+[data-scroll-text] [class*="text-white/90"],
+[data-scroll-text] [class*="text-white/80"],
+[data-scroll-text] [class*="text-white/60"],
+[data-scroll-text] [class*="text-white/50"],
+[data-scroll-text] [class*="text-white/40"],
+[data-scroll-text] [class*="text-white/30"],
+[data-scroll-text] [class*="text-white/20"],
+[data-scroll-text] [class*="text-white/10"] {
+  color: var(--page-text-color, white) !important;
+}
