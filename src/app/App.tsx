@@ -228,7 +228,7 @@ export default function App() {
       </div>
 
       <div ref={deliverablesRef} className="min-h-screen flex items-center justify-center px-8">
-        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center text-justify" style={{ color: '#231226' }}>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -266,7 +266,7 @@ export default function App() {
       </div>
 
       <div ref={growthRef} className="min-h-screen flex items-center justify-center px-8">
-        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center text-justify" style={{ color: '#231226' }}>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -311,7 +311,8 @@ export default function App() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-5xl w-full"
+          className="max-w-5xl w-full text-justify"
+          style={{ color: '#231226' }}
         >
           <h2 className="text-5xl font-bold text-white mb-8 text-center">Tech Stack</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -351,7 +352,7 @@ export default function App() {
       </div>
 
       <div ref={csPracticeRef} className="min-h-screen flex items-center justify-center px-8">
-        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center text-justify" style={{ color: '#231226' }}>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -391,7 +392,7 @@ export default function App() {
       </div>
 
       <div ref={reflectionRef} className="min-h-screen flex items-center justify-center px-8">
-        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center text-justify" style={{ color: '#231226' }}>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -2,6 +2,10 @@
 @import './tailwind.css';
 @import './theme.css';
 
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
 [data-scroll-text] [class*="text-white"] {
   color: var(--page-text-color, white) !important;
 }
