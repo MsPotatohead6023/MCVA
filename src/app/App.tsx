@@ -428,13 +428,9 @@ export default function App() {
               The Medallion Architecture became more than a pattern I followed. It became a way of thinking that I expect
               to carry into every project going forward.
             </p>
-            <motion.div
-              animate={{ scale: [1, 1.05, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="text-white/70 text-xl font-semibold"
-            >
+            <div className="text-white/70 text-xl font-semibold">
               Data engineering is the career I want to build.<br />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
