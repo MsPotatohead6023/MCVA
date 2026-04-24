@@ -7,6 +7,7 @@ import imgStarSchema from "../imports/starschema.png";
 import imgStarsChema from "../imports/stars_chema.png";
 import imgOJTPicture from "../imports/OJT_picture.png";
 import imgOJTPic from "../imports/OJT_pic.jpg";
+import imgReflectionGroup from "../imports/reflection_group_photo.jpg";
 
 export default function App() {
   const aboutMeRef = useRef<HTMLDivElement>(null);
@@ -390,37 +391,51 @@ export default function App() {
       </div>
 
       <div ref={reflectionRef} className="min-h-screen flex items-center justify-center px-8">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center max-w-4xl"
-        >
-          <h2 className="text-6xl font-bold text-white mb-6">Reflection</h2>
-          <p className="text-xl text-white/90 leading-relaxed mb-6">
-            Before my OJT, I understood data engineering conceptually. I had never actually built a system that moved
-            real, messy data through structured transformations and surfaced it as something a decision-maker could act on.
-            That is what this OJT gave me.
-          </p>
-          <p className="text-xl text-white/90 leading-relaxed mb-6">
-            The most technically valuable thing I learned was the difference between writing code that works and engineering
-            a pipeline that holds. Data engineering is fundamentally about defense — building systems that fail gracefully,
-            catch problems early, and give people downstream confidence that what they're looking at is actually true.
-          </p>
-          <p className="text-xl text-white/90 leading-relaxed mb-8">
-            The Medallion Architecture became more than a pattern I followed. It became a way of thinking that I expect
-            to carry into every project going forward.
-          </p>
+        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
           <motion.div
-            animate={{ scale: [1, 1.05, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/70 text-xl font-semibold"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="aspect-[4/3] bg-white/10 rounded-2xl overflow-hidden backdrop-blur-sm border border-white/20 order-2 md:order-1"
           >
-            Data engineering is the career I want to build.<br />
-            That foundation came from Stratpoint.
+            <ImageWithFallback
+              src={imgReflectionGroup}
+              alt="Reflection Group Photo"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="order-1 md:order-2 text-justify"
+          >
+            <h2 className="text-6xl font-bold text-white mb-6">Reflection</h2>
+            <p className="text-xl text-white/90 leading-relaxed mb-6">
+              Before my OJT, I understood data engineering conceptually. I had never actually built a system that moved
+              real, messy data through structured transformations and surfaced it as something a decision-maker could act on.
+              That is what this OJT gave me.
+            </p>
+            <p className="text-xl text-white/90 leading-relaxed mb-6">
+              The most technically valuable thing I learned was the difference between writing code that works and engineering
+              a pipeline that holds. Data engineering is fundamentally about defense — building systems that fail gracefully,
+              catch problems early, and give people downstream confidence that what they're looking at is actually true.
+            </p>
+            <p className="text-xl text-white/90 leading-relaxed mb-8">
+              The Medallion Architecture became more than a pattern I followed. It became a way of thinking that I expect
+              to carry into every project going forward.
+            </p>
+            <motion.div
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="text-white/70 text-xl font-semibold"
+            >
+              Data engineering is the career I want to build.<br />
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
       </div>
     </div>
